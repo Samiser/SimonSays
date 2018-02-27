@@ -50,7 +50,7 @@ function draw() {
 	}
 }
 
-function mousePressed() {
+function touchStarted() {
 	if (stage == 0) {
 		stage++;
 		simon.oldMillis = millis();
@@ -70,7 +70,7 @@ function mousePressed() {
 	}
 }
 
-function mouseReleased() {
+function touchEnded() {
 	for (let i = 0; i < butCount; i++) {
 		buttons[i].butReleased();
 	}
